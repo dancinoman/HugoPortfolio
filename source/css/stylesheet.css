@@ -1,0 +1,79 @@
+
+body{
+	background-color: #222222;
+}
+
+
+.form-container{
+	background-color: #114900;
+	height: 300px;
+	margin: auto;
+	width: 75%;
+}
+
+.formula{
+	margin: auto;
+	background-color: #390300;
+}
+
+.header{
+	background-color: #22dd00;
+	width: 75%;
+	height: 100px;
+	border: 10px grey;
+	border-style: double;
+	margin: auto
+}
+
+.left-div{
+		position: relative;
+		top: 12%;
+		float: left;
+		margin-left: 3%;
+		width: 29.3%;
+		height: 75%;
+		background-color: black;
+}
+
+.middle-div{
+		position: relative;
+		top: 12%;
+		float:left;
+		margin-left: 3%;
+		width: 29.3%;
+		height: 75%;
+		background-color: black;
+}
+
+.portfolio{
+	background-color: #114900;
+	width: 75%;
+	height: 400px;
+	margin: auto
+}
+
+.right-div{
+		position: relative;
+		top: 12%;
+		float: left;
+		margin-left: 3%;
+		width: 29.3%;
+		height: 75%;
+		background-color: black;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-light{
+  color: white;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-light{
+  color: white;
+}
