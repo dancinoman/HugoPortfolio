@@ -18,5 +18,5 @@ if(isset($_POST['mailto'])){
 		//converting data to send it by email
 		$text = $name."/".$country."/".$email."/".$phone."/".$message;
 
-	mail("dancinoman@gmail.com", "Hugo WebDesigner", $text);
+	mail("hugo@hugo-webdesigner.com", "Hugo WebDesigner", $text);
 }
