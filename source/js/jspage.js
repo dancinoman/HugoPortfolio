@@ -7,11 +7,11 @@ var options = function(){
 	{
 		 selection +=	"<option>" + country[i] + "</option>";
 	}
-	
+
 	return selection;
 }
 
 
 
 
-$("#country-selection").prepend( "<select>"+ options() +"</select>");
+$("#country-selection").prepend( "<select name='country'>"+ options() +"</select>");

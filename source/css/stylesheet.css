@@ -1,28 +1,67 @@
-
-body{
-	background-color: #222222;
+*{
+	font-size: 25px;
 }
 
+html,body{
+padding: 0;
+margin: 0;
+}
+
+h1{
+	position: relative;
+	font-family: monospace;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 90px;
+	color: white;
+	text-shadow: 20px 20px #113300;
+}
+
+body{
+	background-image: url('tile.png');
+}
+
+textarea{
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+
+.div-standard{
+	border: 7px green;
+	border-style: groove;
+	background-color: #ddffdd;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px
+}
 
 .form-container{
-	background-color: #114900;
-	height: 300px;
-	margin: auto;
+
 	width: 75%;
 }
 
 .formula{
+	position: relative;
 	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	background-color: #390300;
+	top: 25%;
+}
+
+.formula input{
+	width: 100%;
 }
 
 .header{
-	background-color: #22dd00;
-	width: 75%;
-	height: 100px;
-	border: 10px grey;
-	border-style: double;
-	margin: auto
+	background-image: url('code-screen.png');
+	background-size: cover;
+	background-position: 0% 40%;
+	width: 100%;
+	height: 300px;
+	border-bottom: 10px groove green;
 }
 
 .left-div{
@@ -46,10 +85,8 @@ body{
 }
 
 .portfolio{
-	background-color: #114900;
 	width: 75%;
 	height: 400px;
-	margin: auto
 }
 
 .right-div{
@@ -60,6 +97,14 @@ body{
 		width: 29.3%;
 		height: 75%;
 		background-color: black;
+}
+
+.screen-tech{
+	overflow: hidden;
+	background-color: #eee;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 5%;
 }
 
 .text-center{

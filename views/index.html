@@ -1,87 +1,91 @@
+<?php
+	include '../source/php/send.php';
+?>
+
 <html>
 <head>
 	<link rel="stylesheet" href="../source/css/stylesheet.css">
 
 </head>
 <body>
+
 	<div class="header">
-		<h1 class="text-center">Hugo Web Programmer</h1>
+		<h1 class="text-center">Hugo Web Designer</h1>
 	</div>
 
-	<div title="presentation" style="font-size: 18px;">
-		<p class="text-light text-center" style="height: 75px">
-			Here goes the presentation
-		</p>
-	</div>
-
-	<div class="portfolio">
-		<div class="left-div">
-			<h2 class="text-light text-center">Portfolio 1</h2>
+	<div class="screen-tech">
+		<div title="presentation" style="padding: 30px; padding-top: 0">
+			<p class="text-center" style="height: 75px; font-size: 50px">
+				Here are some different projects that I worked on.<br/> Feel free to look...
+			</p>
 		</div>
-		<div class="middle-div">
-			<h2 class="text-light text-center">Portfolio 2</h2>
+
+		<div class="portfolio div-standard">
+			<div class="left-div">
+				<h2 class="text-light text-center">Portfolio 1</h2>
+			</div>
+			<div class="middle-div">
+				<h2 class="text-light text-center">Portfolio 2</h2>
+			</div>
+			<div class="right-div">
+				<h2 class="text-light text-center">Portfolio 3</h2>
+			</div>
 		</div>
-		<div class="right-div">
-			<h2 class="text-light text-center">Portfolio 3</h2>
+
+		<div title="form" class="form-container div-standard">
+			<form method="POST" action="">
+				<table class="formula" cellspacing="10">
+					<tr>
+						<th>
+							<span class="text-light">Name:</span>
+						</th>
+						<td>
+							<input type="text" name="name"/>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="text-light">Country:</span>
+						</th>
+						<td>
+							<div id="country-selection"></div>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="text-light">E-mail:</span>
+						</th>
+						<td>
+							<input type="text" name="email"/>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="text-light">Phone:</span>
+						</th>
+						<td>
+							<input type="phone" name="phone"/>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="text-light">Message</span>
+						</th>
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<textarea name="message"></textarea>
+						</td>
+					<tr>
+				</table>
+				<div class="text-center">
+					<input type=submit name="mailto" value="Send">
+				</div>
+
+			</form>
 		</div>
 	</div>
-
-	<div title="presentation" style="font-size: 18px;">
-		<p class="text-light text-center" style="height: 75px">
-			Here goes the presentation
-		</p>
-	</div>
-
-	<div title="form" class="form-container">
-		<form method="POST" action="mailto:dancinoman@gmail.com">
-			<table class="formula">
-				<tr>
-					<th>
-						<span class="text-light">Name:</span>
-					</th>
-					<td>
-						<input type="text"/>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<span class="text-light">Country:</span>
-					</th>
-					<td>
-						<div id="country-selection"></div>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<span class="text-light">E-mail:</span>
-					</th>
-					<td>
-						<input type="text"/>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<span class="text-light">Phone</span>
-					</th>
-					<td>
-						<input type="number"/>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<span class="text-light">Message</span>
-					</th>
-				</tr>
-				<tr>
-					<th></th>
-					<td>
-						<textarea></textarea>
-					</td>
-				<tr>
-			</table>
-		</form>
-	</div>
-
 
 </body>
 
