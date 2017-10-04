@@ -10,7 +10,6 @@ $(document).ready(function(){
 		var message = $("#message").val();
 
 
-
 		var messageBox = $("#message-box");
 
 		if(name == ""){
@@ -24,19 +23,28 @@ $(document).ready(function(){
 
 		}
 		else if(mail == ""){
-			console.log(mail);
+
 			messageBox.text("Please enter your e-mail.");
 
 		}
-		else if(phone = ""){
+		else if(phone == ""){
 
 			messageBox.text("Please enter your phone number.");
 
 		}
-		else if(message = ""){
+		else if(message == ""){
 
 			messageBox.text("Please enter a message");
 
 		}
-	})
+		else{
+
+			formData = $("#form").serialize();
+
+			$.ajax({
+        type: 'POST',
+        url: "../source/php/send.php",
+        data: formData});
+			}
+		});
 });

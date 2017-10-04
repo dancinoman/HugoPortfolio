@@ -33,7 +33,7 @@
 
 		<div title="form" class="form-container div-standard">
 			<h2 class="text-center">Contact us</h2>
-			<form method="POST" action="">
+			<form id="form" method="POST" action="">
 				<table class="formula" cellspacing="10">
 					<tr>
 						<th>
