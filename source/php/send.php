@@ -2,8 +2,9 @@
 
 include 'debuglog.php';
 
-if(isset($_POST['mailto'])){
+$text = "";
 
+if(isset($_POST['mailto'])){
 
 		$name = $_POST['name'];
 
@@ -15,8 +16,17 @@ if(isset($_POST['mailto'])){
 
 		$message = $_POST['message'];
 
-		//converting data to send it by email
-		$text = $name."/".$country."/".$email."/".$phone."/".$message;
 
-	mail("hugo@hugo-webdesigner.com", "Hugo WebDesigner", $text);
+		if(mail("hugo@hugo-webdesigner.com", "From a request", $text)){
+			return;
+		}
+
+		//converting data to send it by email
+		$text .= $name ."\n";
+		$text .= $country ."\n";
+		$text .= $email ."\n";
+		$text .= $phone ."\n";
+		$text .= $message ."\n";
+
+
 }
