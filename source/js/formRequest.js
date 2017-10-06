@@ -5,8 +5,7 @@ $(document).ready(function(){
 
 		var name = $("#name").val();
 		var country = $("#country").val();
-		var mail = $("#mail").val();
-		var phone = $("#phone").val();
+		var email = $("#email").val();
 		var message = $("#message").val();
 
 
@@ -22,14 +21,9 @@ $(document).ready(function(){
 			messageBox.text("Please select a country.");
 
 		}
-		else if(mail == ""){
+		else if(email == ""){
 
 			messageBox.text("Please enter your e-mail.");
-
-		}
-		else if(phone == ""){
-
-			messageBox.text("Please enter your phone number.");
 
 		}
 		else if(message == ""){
@@ -39,12 +33,19 @@ $(document).ready(function(){
 		}
 		else{
 
-			formData = $("#form").serialize();
+			var email_info = {
+				name : name,
+				country : country,
+				email : email,
+				message : message
+			};
 
-			$.ajax({
-        type: 'POST',
-        url: "../source/php/send.php",
-        data: formData});
-			}
-		});
+			$.post("source/php/send.php", email_info , function(){
+					messageBox.text("Email received. We will response as soon as possible. Thank you!");
+
+			});
+
+			name = country = email = phone = message = "";
+		}
+	});
 });
