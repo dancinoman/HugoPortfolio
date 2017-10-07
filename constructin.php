@@ -26,59 +26,48 @@
 				<h2 class="text-light text-center">Portfolio 3</h2>
 			</div>
 		</div>
+	</div>
 
 		<div title="form" class="form-container div-standard">
 			<h2 class="text-center">We want to know your project in mind</h2>
-			<form id="form" method="POST" action="">
-				<table class="formula" cellspacing="10">
-					<tr>
-						<th>
-							<span class="text-light">Full name:</span>
-						</th>
-						<td>
-							<input type="text" id="name" name="name"/>
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span class="text-light">Country:</span>
-						</th>
-						<td>
-							<div id="country-selection"></div>
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span class="text-light">E-mail:</span>
-						</th>
-						<td>
-							<input type="text" id="email" name="email"/>
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span class="text-light">Message:</span>
-						</th>
-					</tr>
-					<tr>
-						<th></th>
-						<td>
-							<textarea id="message" name="message"></textarea>
-						</td>
-					</tr>
-					<tr>
-						<th></th>
-						<td>
-					  	<input type=submit id="mailto" name="mailto" value="Send">
-						</td>
-					</tr>
-				</table>
+			<form id="form" class="formula" method="POST" action="">
+				<fieldset class="input-container">
+					<div id="notice-name" class="notice-box" style="height: 28px; background-color: black">
+					</div>
+					<div class="input-entry">
+						<label class="text-light" for="name">Full Name:</label>
+						<input type="text" id="name" name="name"/>
+					</div>
+				</fieldset>
+				<fieldset class="input-container">
+					<div id="notice-country" class="notice-box">
+					</div>
+					<div class="input-entry">
+						<label class="text-light" for="country-selection">Country:</label>
+						<div id="country-selection"></div>
+					</div>
+				</fieldset>
+				<fieldset class="input-container">
+					<div id="notice-email" class="notice-box">
+					</div>
+					<div class="input-entry">
+						<label class="text-light" for="email">Email:</label>
+						<input type="text" id="email" name="email"/>
+					</div>
+				</fieldset>
+				<fieldset class="input-container">
+					<div id="notice-message" class="notice-box">
+					</div>
+					<div class="input-entry">
+						<label class="text-light" for="message">Message:</label>
+						<textarea id="message" name="message"></textarea>
+					</div>
+				</fieldset>
+				<input type=submit id="mailto" name="mailto" value="Send">
 				<div id="message-box">
 				</div>
-
 			</form>
 		</div>
-	</div>
 
 </body>
 

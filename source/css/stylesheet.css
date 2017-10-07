@@ -3,6 +3,10 @@
 	font-family: monospace;
 }
 
+body{
+	background-image: url('tile.png');
+}
+
 html,body{
 padding: 0;
 margin: 0;
@@ -19,8 +23,9 @@ h1{
 	text-shadow: 20px 20px #113300;
 }
 
-body{
-	background-image: url('tile.png');
+label{
+	float: left;
+	text-align: right;
 }
 
 textarea{
@@ -39,23 +44,23 @@ textarea{
 }
 
 .form-container{
-
-	width: 75%;
+	width: 90%;
 }
 
 .formula{
-	position: relative;
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	background-color: #0b0;
-	top: 25%;
 	padding: 20px;
 	border: 2px solid black;
+	width: 40%;
+
 }
 
-.formula input{
-	width: 100%;
+.formula input, select, textarea{
+	width: 70%;
+	float: right;
 }
 
 .header{
@@ -124,4 +129,12 @@ textarea{
 
 .text-light{
   color: white;
+}
+
+#message-box{
+	margin-left: 12.5%;
+	width: 75%;
+	height: 50px;
+	text-align: center;
+	padding: 20px;
 }
