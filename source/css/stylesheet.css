@@ -1,10 +1,12 @@
 *{
 	font-size: 25px;
 	font-family: monospace;
+	border-radius: 5px;
 }
 
 body{
-	background-image: url('tile.png');
+	background-color: #dfd;
+	/*background-image: url('tile.png');*/
 }
 
 fieldset{
@@ -45,11 +47,8 @@ textarea{
 }
 
 .div-standard{
-	border: 7px green;
-	border-style: groove;
 	background-color: #dfd;
 	margin: auto;
-	margin-top: 40px;
 	margin-bottom: 40px
 }
 
@@ -84,8 +83,6 @@ textarea{
 }
 
 .left-div{
-		position: relative;
-		top: 12%;
 		float: left;
 		margin-left: 3%;
 		width: 29.3%;
@@ -94,12 +91,11 @@ textarea{
 }
 
 .middle-div{
-		position: relative;
-		top: 12%;
 		float:left;
 		margin-left: 3%;
 		width: 29.3%;
 		height: 75%;
+		background-color: black;
 }
 
 .notice-box:before{
@@ -114,14 +110,16 @@ textarea{
 	text-align: right;
 }
 
+.main-article{
+	background-color: #dfd;
+}
+
 .portfolio{
 	width: 75%;
 	height: 400px;
 }
 
 .right-div{
-		position: relative;
-		top: 12%;
 		float: left;
 		margin-left: 3%;
 		width: 29.3%;
@@ -132,9 +130,8 @@ textarea{
 .screen-tech{
 	overflow: hidden;
 	background-color: #eee;
-	width: 90%;
-	margin: auto;
-	margin-bottom: 5%;
+	border-bottom: 7px green;
+	border-style: groove;
 }
 
 .text-small{
