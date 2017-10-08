@@ -30,37 +30,35 @@
 
 		<div title="form" class="form-container div-standard">
 			<h2 class="text-center">We want to know your project in mind</h2>
+			<span id="notice-holder" class="notice-box">
+			</span>
 			<form id="form" class="formula" method="POST" action="">
 				<fieldset class="input-container">
-					<div id="notice-name" class="notice-box" style="height: 28px; background-color: black">
-					</div>
 					<div class="input-entry">
-						<label class="text-light" for="name">Full Name:</label>
-						<input type="text" id="name" name="name"/>
+						<span id="cursor-name" class="asterix"></span>
+						<label class="text-small text-light" for="name">Full Name:</label>
+						<input type="text" class="input-em" id="name" name="name"/>
 					</div>
 				</fieldset>
 				<fieldset class="input-container">
-					<div id="notice-country" class="notice-box">
-					</div>
 					<div class="input-entry">
-						<label class="text-light" for="country-selection">Country:</label>
+						<span id="cursor-country" class="asterix"></span>
+						<label class="text-small text-light" for="country-selection">Country:</label>
 						<div id="country-selection"></div>
 					</div>
 				</fieldset>
 				<fieldset class="input-container">
-					<div id="notice-email" class="notice-box">
-					</div>
 					<div class="input-entry">
-						<label class="text-light" for="email">Email:</label>
-						<input type="text" id="email" name="email"/>
+						<span id="cursor-email" class="asterix"></span>
+						<label class="text-small text-light" for="email">Email:</label>
+						<input type="text" class="input-em" id="email" name="email"/>
 					</div>
 				</fieldset>
 				<fieldset class="input-container">
-					<div id="notice-message" class="notice-box">
-					</div>
 					<div class="input-entry">
-						<label class="text-light" for="message">Message:</label>
-						<textarea id="message" name="message"></textarea>
+						<span id="cursor-message" class="asterix"></span>
+						<label class="text-small text-light" for="message">Message:</label>
+						<textarea id="message" class="input-em" name="message"></textarea>
 					</div>
 				</fieldset>
 				<input type=submit id="mailto" name="mailto" value="Send">

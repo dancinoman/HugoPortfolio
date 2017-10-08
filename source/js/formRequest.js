@@ -1,7 +1,12 @@
+
 $(document).ready(function(){
 
+
+
+var messageBox = $("#message-box");
+
 	$("#mailto").on("click", function(){
-		event.preventDefault();
+		event.preventDefault()
 
 		var name = $("#name").val();
 		var country = $("#country").val();
@@ -9,26 +14,32 @@ $(document).ready(function(){
 		var message = $("#message").val();
 
 
-		var messageBox = $("#message-box");
+		//removes aterix if the users has enter a value
+		$(".input-em").val(function(){
+			if($(this).val() != ""){
+
+				var id = $(this).attr("id");
+				$("#cursor-" + id).text("");
+				return $(this).val();
+
+			}
+		});
+
 
 		if(name == ""){
-
-			messageBox.text("Please enter you name.");
+			notice("name", "Please enter your fullname.")
 
 		}
 		else if(country == ""){
-
-			messageBox.text("Please select a country.");
+			notice("country", "Please select a country.")
 
 		}
 		else if(email == ""){
-
-			messageBox.text("Please enter your e-mail.");
+			notice("email", "Please enter your e-mail.")
 
 		}
 		else if(message == ""){
-
-			messageBox.text("Please enter a message");
+			notice("message", "Please enter a message.")
 
 		}
 		else{
@@ -45,7 +56,19 @@ $(document).ready(function(){
 
 			});
 
-			name = country = email = phone = message = "";
+			//reset th form
+			$(".input-em").val("");
 		}
+
 	});
+
+	//blueprint for notices
+	function notice(notice_name, notice_message){
+
+		$("#cursor-" + notice_name).text("*");
+
+		$("#notice-holder").text(notice_message);
+
+	}
+
 });

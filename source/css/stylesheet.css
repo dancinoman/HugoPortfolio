@@ -7,6 +7,10 @@ body{
 	background-image: url('tile.png');
 }
 
+fieldset{
+	border: none;
+}
+
 html,body{
 padding: 0;
 margin: 0;
@@ -34,6 +38,12 @@ textarea{
 	resize: none;
 }
 
+.asterix{
+	position: absolute;
+	left: 32%;
+	color: #c03;
+}
+
 .div-standard{
 	border: 7px green;
 	border-style: groove;
@@ -49,7 +59,6 @@ textarea{
 
 .formula{
 	margin: auto;
-	margin-top: 30px;
 	margin-bottom: 30px;
 	background-color: #0b0;
 	padding: 20px;
@@ -59,6 +68,8 @@ textarea{
 }
 
 .formula input, select, textarea{
+	position: relative;
+	top: -4px;
 	width: 70%;
 	float: right;
 }
@@ -89,7 +100,18 @@ textarea{
 		margin-left: 3%;
 		width: 29.3%;
 		height: 75%;
-		background-color: black;
+}
+
+.notice-box:before{
+	content: "\200b";
+}
+
+.notice-box{
+	margin-left: 55%;
+	font-size: 15px;
+	color: #c03;
+	weight: bold;
+	text-align: right;
 }
 
 .portfolio{
@@ -113,6 +135,10 @@ textarea{
 	width: 90%;
 	margin: auto;
 	margin-bottom: 5%;
+}
+
+.text-small{
+	font-size: 20px;
 }
 
 .text-center{

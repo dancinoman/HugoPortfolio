@@ -11,7 +11,4 @@ var options = function(){
 	return selection;
 }
 
-
-
-
 $("#country-selection").prepend( "<select id='country' name='country'>"+ options() +"</select>");
