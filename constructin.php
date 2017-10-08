@@ -16,7 +16,7 @@
 		</div>
 	</div>
 	<div class="main-article">
-		<h2 style="text-align: center; font-size: 40px; margin-bottom:0">Web sites</h2>
+		<h2>Web sites</h2>
 		<div class="portfolio div-standard">
 			<div class="left-div">
 				<h2 class="text-light text-center">Kuden Force</h2>
@@ -24,7 +24,8 @@
 				</div>
 			</div>
 			<div class="middle-div">
-				<h2 class="text-light text-center">Portfolio 2</h2>
+				<div class="stats">
+				</div>
 			</div>
 			<div class="right-div">
 				<h2 class="text-light text-center">Portfolio 3</h2>
@@ -32,8 +33,10 @@
 		</div>
 
 
+
+
 		<div title="form" class="form-container div-standard">
-			<h2 class="text-center">We want to know your project in mind</h2>
+			<h2>We want to know your project in mind</h2>
 			<span id="notice-holder" class="notice-box">
 			</span>
 			<form id="form" class="formula" method="POST" action="">
@@ -65,11 +68,15 @@
 						<textarea id="message" class="input-em" name="message"></textarea>
 					</div>
 				</fieldset>
-
+				<input type="submit" id="mailto" name="mailto" value="Send"/>
+				<div id="message-box">
 				</div>
 			</form>
 		</div>
 	</div>
+
+	<footer>
+	</footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
