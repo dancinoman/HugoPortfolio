@@ -1,26 +1,26 @@
 <html>
 <head>
 	<link rel="stylesheet" href="source/css/stylesheet.css"/>
+	<link rel="stylesheet" href="source/css/responsive.css" media="only screen and (max-width: 900px)">
 </head>
 <body>
 
 	<div class="header">
-		<h1 class="text-center" style="top: 80px">Hugo Web Designer</h1>
+		<h1 class="text-center">Hugo Web Designer</h1>
 	</div>
 
 	<div class="screen-tech">
-			<div title="presentation" style="padding: 30px; padding-top: 0">
-				<p class="text-center" style="height: 75px; font-size: 30px">
+			<div title="presentation" style="padding-top: 0">
+				<p class="text-center" style="top: 25%">
 					There are some projects that I worked on. Most of them are website and mini-games. My contribution was mostly coding. I hope this will catch your interest. Enjoy your visit!
 				</p>
 			</div>
 	</div>
 
 	<div class="main-article">
-		<h2>Web sites</h2>
+		<h2 class="title-pre">Websites</h2>
 		<div class="portfolio div-standard">
 				<div class="left-div btn-flip">
-					<h2 class="text-light text-center" style="position: absolute; margin-left: 65px">Kuden Force</h2>
 					<img id="img-stats-left" src="source/css/range-kudenforce.png" alt="kuden force stats"/>
 				</div>
 			<div class="middle-div btn-flip">

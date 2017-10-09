@@ -17,5 +17,6 @@ $("#country-selection").prepend( "<select id='country' name='country'>"+ options
 
 //toggling the window for the portfolio description
 $("body").on("click", ".btn-flip", function(){
-	$(".flippering-ui").slideToggle("slow");
+	$(".flippering-ui").show("slow");
+	$(".flippering-ui").css("visibility", "visible");
 });

@@ -1,0 +1,114 @@
+*{
+	font-size: 15px;
+}
+
+h1{
+	font-size: 40px;
+}
+
+h2{
+	font-size: 25px;
+}
+
+.flippering-ui{
+	display: block;
+	visibility: hidden;
+}
+
+.formula{
+	width: 75%;
+}
+
+.left-div{
+		width: 50%;
+		display: block;
+		margin-left: 5%;
+}
+
+.middle-div{
+		width: 50%;
+		display: block;
+		margin: 20px;
+		margin-left: 5%;
+}
+
+.right-div{
+		width: 50%;
+		display: block;
+}
+
+.text-small{
+	font-size: 15px;
+}
+
+.title-pre{
+	position: relative;
+	left: 22%;
+	text-align: left;
+}
+
+@media only screen and (max-width: 480px){
+
+	h1{
+		top: 50px;
+		text-shadow: 10px 10px #113300;
+		font-size: 25px;
+	}
+
+	h2{
+		font-size: 22px;
+	}
+
+	label{
+		display: block;
+		float: none;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.flippering-ui{
+		display: block;
+		visibility: hidden;
+	}
+
+	.formula{
+		width: 75%;
+	}
+
+	.formula input, select, textarea{
+		width: 100%;
+	}
+
+	.header{
+		height: 100px;
+	}
+
+	.left-div{
+			width: 75%;
+			height: 60%;
+			margin-left: 12.5%;
+	}
+
+	#mailto {
+		width: 50%;
+		margin-left: 25%;
+		float: none;
+	}
+
+	.middle-div{
+		width: 75%;
+		height: 60%;
+		margin-left: 12.5%;
+	}
+
+	.right-div{
+		width: 75%;
+		height: 60%;
+		margin-left: 12.5%;
+	}
+
+	.title-pre{
+		position: inherit;
+		text-align: center;
+	}
+}
