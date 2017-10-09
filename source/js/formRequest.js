@@ -52,7 +52,8 @@ var messageBox = $("#message-box");
 			};
 
 			$.post("source/php/send.php", email_info , function(){
-					messageBox.text("Email received. We will response as soon as possible. Thank you!");
+					messageBox.css("visibility", "visible");
+					messageBox.html("<p>Email received. We will response as soon as possible.<br/> Thank you!</p>");
 
 			});
 

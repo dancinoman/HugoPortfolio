@@ -5,34 +5,35 @@
 <body>
 
 	<div class="header">
-		<h1 class="text-center">Hugo Web Designer</h1>
+		<h1 class="text-center" style="top: 80px">Hugo Web Designer</h1>
 	</div>
 
 	<div class="screen-tech">
-		<div title="presentation" style="padding: 30px; padding-top: 0">
-			<p class="text-center" style="height: 75px; font-size: 30px">
-				There are some projects that I worked on.<br/>Most of them are website and mini-games. My contribution was mostly coding. I hope this will catch your interest. Enjoy your visit!
-			</p>
-		</div>
+			<div title="presentation" style="padding: 30px; padding-top: 0">
+				<p class="text-center" style="height: 75px; font-size: 30px">
+					There are some projects that I worked on. Most of them are website and mini-games. My contribution was mostly coding. I hope this will catch your interest. Enjoy your visit!
+				</p>
+			</div>
 	</div>
+
 	<div class="main-article">
 		<h2>Web sites</h2>
 		<div class="portfolio div-standard">
-			<div class="left-div">
-				<h2 class="text-light text-center">Kuden Force</h2>
-				<div class="stats">
+				<div class="left-div btn-flip">
+					<h2 class="text-light text-center" style="position: absolute; margin-left: 65px">Kuden Force</h2>
+					<img id="img-stats-left" src="source/css/range-kudenforce.png" alt="kuden force stats"/>
 				</div>
+			<div class="middle-div btn-flip">
+				<img id="img-stats-middle" src="source/css/range-aec.png" alt="aec stats"/>
 			</div>
-			<div class="middle-div">
-				<div class="stats">
-				</div>
-			</div>
-			<div class="right-div">
-				<h2 class="text-light text-center">Portfolio 3</h2>
+			<div class="right-div btn-flip">
+				<img id="img-stats-right" src="source/css/range-roll20.png" alt="aec stats"/>
 			</div>
 		</div>
 
-
+		<div class="flippering-ui">
+			<img class="description-image" src="#" alt="capture of a project"/>
+		</div>
 
 
 		<div title="form" class="form-container div-standard">
@@ -69,8 +70,7 @@
 					</div>
 				</fieldset>
 				<input type="submit" id="mailto" name="mailto" value="Send"/>
-				<div id="message-box">
-				</div>
+				<div id="message-box"></div>
 			</form>
 		</div>
 	</div>
