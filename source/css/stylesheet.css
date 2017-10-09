@@ -20,8 +20,8 @@ footer{
 }
 
 html,body{
-padding: 0;
-margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 h1{
@@ -85,7 +85,6 @@ textarea{
 .div-standard{
 	background-color: #dfd;
 	margin: auto;
-	margin-bottom: 40px
 }
 
 .flippering-ui{
@@ -123,6 +122,14 @@ textarea{
 	height: 200px;
 	border-bottom: 10px groove green;
 	border-radius: 0;
+}
+
+.img-desc{
+	width: 20%;
+	height: auto;
+	margin-left: 2%;
+	margin-top: 1%;
+	float: left;
 }
 
 #img-stats-left{
@@ -227,6 +234,11 @@ textarea{
 	border-bottom: 7px green;
 	border-style: groove;
 	border-radius: 0;
+}
+
+.title-desc{
+	position: relative;
+	top: -40px;
 }
 
 .text-small{

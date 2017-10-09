@@ -20,10 +20,10 @@
 	<div class="main-article">
 		<h2 class="title-pre">Websites</h2>
 		<div class="portfolio div-standard">
-				<div class="left-div btn-flip">
+				<div class="left-div btn-flip" data-portfolio="portfolioLeft">
 					<img id="img-stats-left" src="source/css/range-kudenforce.png" alt="kuden force stats"/>
 				</div>
-			<div class="middle-div btn-flip">
+			<div class="middle-div btn-flip" data-portfolio="portfolioMiddle">
 				<img id="img-stats-middle" src="source/css/range-aec.png" alt="aec stats"/>
 			</div>
 			<div class="right-div btn-flip">
@@ -31,9 +31,7 @@
 			</div>
 		</div>
 
-		<div class="flippering-ui">
-			<img class="description-image" src="#" alt="capture of a project"/>
-		</div>
+		<div id="display-article" class="flippering-ui div-standard"></div>
 
 
 		<div title="form" class="form-container div-standard">
@@ -82,11 +80,24 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 						 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 						 crossorigin="anonymous" type="text/javascript"></script>
+<script src="source/plugin/jquery.mustache.js"></script>
+<script src="source/plugin/mustache.js"></script>
+
+
+<script type="x-tmpl-mustache" id="desc-template">
+	<img class="img-desc" src="{{statsImage}}" alt="stats"/>
+	<h2 class="title-desc">{{title}}</h2>
+	<p>{{article}}</p>
+</script>
 
 <script src="source/js/country.js" type="text/javascript"></script>
 
 <script src="source/js/jspage.js" type="text/javascript"></script>
 
 <script src="source/js/formRequest.js" type="text/javascript"></script>
+
+
+
+
 
 </html>
