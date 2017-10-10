@@ -52,10 +52,8 @@ textarea{
 	resize: none;
 }
 
-.asterix{
-	position: absolute;
-	left: 32%;
-	color: #c03;
+.alert{
+	color: red;
 }
 
 [class*="btn"]{
@@ -190,7 +188,7 @@ textarea{
 
 .notice-box{
 	margin-left: 55%;
-	font-size: 15px;
+	font-size: 20px;
 	color: #c03;
 	weight: bold;
 	text-align: right;

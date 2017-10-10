@@ -1,7 +1,10 @@
 <html>
 <head>
+
+	<title>Hugo Web-Designer</title>
 	<link rel="stylesheet" href="source/css/stylesheet.css"/>
 	<link rel="stylesheet" href="source/css/responsive.css" media="only screen and (max-width: 900px)">
+
 </head>
 <body>
 
@@ -20,13 +23,13 @@
 	<div class="main-article">
 		<h2 class="title-pre">Websites</h2>
 		<div class="portfolio div-standard">
-				<div class="left-div btn-flip" data-portfolio="portfolioLeft">
+				<div class="left-div btn-flip" data-portfolio="1">
 					<img id="img-stats-left" src="source/css/range-kudenforce.png" alt="kuden force stats"/>
 				</div>
-			<div class="middle-div btn-flip" data-portfolio="portfolioMiddle">
+			<div class="middle-div btn-flip" data-portfolio="2">
 				<img id="img-stats-middle" src="source/css/range-aec.png" alt="aec stats"/>
 			</div>
-			<div class="right-div btn-flip">
+			<div class="right-div btn-flip" data-portfolio="3">
 				<img id="img-stats-right" src="source/css/range-roll20.png" alt="aec stats"/>
 			</div>
 		</div>
@@ -41,28 +44,24 @@
 			<form id="form" class="formula" method="POST" action="">
 				<fieldset class="input-container">
 					<div class="input-entry">
-						<span id="cursor-name" class="asterix"></span>
 						<label class="text-small text-light" for="name">Full Name:</label>
-						<input type="text" class="input-em" id="name" name="name"/>
+						<input type="text" id="name" class="input-em" name="name"/>
 					</div>
 				</fieldset>
 				<fieldset class="input-container">
 					<div class="input-entry">
-						<span id="cursor-country" class="asterix"></span>
 						<label class="text-small text-light" for="country-selection">Country:</label>
 						<div id="country-selection"></div>
 					</div>
 				</fieldset>
 				<fieldset class="input-container">
 					<div class="input-entry">
-						<span id="cursor-email" class="asterix"></span>
 						<label class="text-small text-light" for="email">Email:</label>
 						<input type="text" class="input-em" id="email" name="email"/>
 					</div>
 				</fieldset>
 				<fieldset class="input-container">
 					<div class="input-entry">
-						<span id="cursor-message" class="asterix"></span>
 						<label class="text-small text-light" for="message">Message:</label>
 						<textarea id="message" class="input-em" name="message"></textarea>
 					</div>

@@ -8,38 +8,55 @@ var messageBox = $("#message-box");
 	$("#mailto").on("click", function(){
 		event.preventDefault()
 
-		var name = $("#name").val();
-		var country = $("#country").val();
-		var email = $("#email").val();
-		var message = $("#message").val();
+		var name = $("#name");
+		var country = $("#country");
+		var email = $("#email");
+		var message = $("#message");
 
 
-		//removes aterix if the users has enter a value
+		//removes the class alert if user has put a value
 		$(".input-em").val(function(){
 			if($(this).val() != ""){
 
-				var id = $(this).attr("id");
-				$("#cursor-" + id).text("");
+				$(this).siblings("label").addClass("text-light");
+
+				$(this).siblings("label").removeClass("alert");
 				return $(this).val();
 
 			}
 		});
 
+		country.val(function(){
+			if($(this).val() != null){
 
-		if(name == ""){
-			notice("name", "Please enter your fullname.")
+				$(this).parent().siblings("label").addClass("text-light");
+				$(this).parent().siblings("label").removeClass("alert");
+				return $(this).val();
+			}
+
+		});
+
+
+		if(name.val() == ""){
+			notice(name, "Please enter your fullname.");
 
 		}
-		else if(country == ""){
-			notice("country", "Please select a country.")
+		else if(country.val() == null){
+			notice(country, "Please select a country.");
+
+			country.val(function(){
+
+						$(this).parent().siblings("label").addClass("alert");
+						$(this).parent().siblings("label").removeClass("text-light");
+
+				});
+		}
+		else if(email.val() == ""){
+			notice(email, "Please enter your e-mail.");
 
 		}
-		else if(email == ""){
-			notice("email", "Please enter your e-mail.")
-
-		}
-		else if(message == ""){
-			notice("message", "Please enter a message.")
+		else if(message.val() == ""){
+			notice(message, "Please enter a message.");
 
 		}
 		else{
@@ -49,6 +66,7 @@ var messageBox = $("#message-box");
 				country : country,
 				email : email,
 				message : message
+
 			};
 
 			$.post("source/php/send.php", email_info , function(){
@@ -63,10 +81,14 @@ var messageBox = $("#message-box");
 
 	});
 
-	//blueprint for notices
-	function notice(notice_name, notice_message){
+	//blueprint function for puting an alert if user does'nt fullfill an input
+	function notice(idInput, notice_message){
 
-		$("#cursor-" + notice_name).text("*");
+		if(idInput != country){
+			idInput.siblings("label").removeClass("text-light");
+
+			idInput.siblings("label").addClass("alert");
+		}
 
 		$("#notice-holder").text(notice_message);
 
