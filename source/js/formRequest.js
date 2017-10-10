@@ -42,14 +42,11 @@ var messageBox = $("#message-box");
 
 		}
 		else if(country.val() == null){
-			notice(country, "Please select a country.");
 
-			country.val(function(){
+			country.parent().siblings("label").addClass("alert");
+			country.parent().siblings("label").removeClass("text-light");
+			$("#notice-holder").text("Please choose your country.");
 
-						$(this).parent().siblings("label").addClass("alert");
-						$(this).parent().siblings("label").removeClass("text-light");
-
-				});
 		}
 		else if(email.val() == ""){
 			notice(email, "Please enter your e-mail.");
@@ -62,18 +59,18 @@ var messageBox = $("#message-box");
 		else{
 
 			var email_info = {
-				name : name,
-				country : country,
-				email : email,
-				message : message
+				name : name.val(),
+				country : country.val(),
+				email : email.val(),
+				message : message.val()
 
 			};
 
-			$.post("source/php/send.php", email_info , function(){
-					messageBox.css("visibility", "visible");
-					messageBox.html("<p>Email received. We will response as soon as possible.<br/> Thank you!</p>");
+			$.post("source/php/send.php", email_info);
 
-			});
+			messageBox.css("visibility", "visible");
+
+			messageBox.html("<p>Email received. We will response as soon as possible.<br/> Thank you!</p>");
 
 			//reset th form
 			$(".input-em").val("");
@@ -84,11 +81,11 @@ var messageBox = $("#message-box");
 	//blueprint function for puting an alert if user does'nt fullfill an input
 	function notice(idInput, notice_message){
 
-		if(idInput != country){
-			idInput.siblings("label").removeClass("text-light");
 
-			idInput.siblings("label").addClass("alert");
-		}
+		idInput.siblings("label").removeClass("text-light");
+
+		idInput.siblings("label").addClass("alert");
+
 
 		$("#notice-holder").text(notice_message);
 
