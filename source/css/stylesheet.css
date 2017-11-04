@@ -4,10 +4,6 @@
 	border-radius: 5px;
 }
 
-body{
-	background-color: #dfd;
-}
-
 fieldset{
 	border: none;
 }
@@ -39,6 +35,8 @@ h2{
 	text-align: center;
 	font-size: 40px;
 	margin-bottom:0;
+	color: white;
+	background-color: #20304c;
 }
 
 label{
@@ -54,6 +52,10 @@ textarea{
 
 .alert{
 	color: red;
+}
+
+.article {
+	padding-top: 60px;
 }
 
 [class*="btn"]{
@@ -81,14 +83,14 @@ textarea{
 }
 
 .div-standard{
-	background-color: #dfd;
 	margin: auto;
+	width: 100%;
 }
 
 .flippering-ui{
 	display: none;
-	height: 500px;
-	width: 90%;
+	height: 400px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -99,7 +101,7 @@ textarea{
 .formula{
 	margin: auto;
 	margin-bottom: 30px;
-	background-color: #0b0;
+	background-color: grey;
 	padding: 20px;
 	border: 2px solid black;
 	width: 55%;
@@ -118,7 +120,6 @@ textarea{
 	background-position: 0% 40%;
 	width: 100%;
 	height: 200px;
-	border-bottom: 10px groove green;
 	border-radius: 0;
 }
 
@@ -194,10 +195,6 @@ textarea{
 	text-align: right;
 }
 
-.main-article{
-	background-color: #dfd;
-}
-
 #message-box{
 	margin-left: 5%;
 	margin-top: 50px;
@@ -210,6 +207,7 @@ textarea{
 
 .portfolio{
 	margin: auto;
+	margin-top: 20px;
 	height: 350px;
 }
 
@@ -229,14 +227,10 @@ textarea{
 .screen-tech{
 	overflow: hidden;
 	background-color: #eee;
-	border-bottom: 7px green;
+	border-bottom: 7px #aae;
+	border-top: 7px groove #aae;
 	border-style: groove;
 	border-radius: 0;
-}
-
-.title-desc{
-	position: relative;
-	top: -40px;
 }
 
 .text-small{

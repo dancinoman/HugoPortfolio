@@ -36,9 +36,9 @@
 
 		<div id="display-article" class="flippering-ui div-standard"></div>
 
-
+		<h2>We want to know your project in mind</h2>
+		
 		<div title="form" class="form-container div-standard">
-			<h2>We want to know your project in mind</h2>
 			<span id="notice-holder" class="notice-box">
 			</span>
 			<form id="form" class="formula" method="POST" action="">
@@ -79,24 +79,21 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 						 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 						 crossorigin="anonymous" type="text/javascript"></script>
+
 <script src="source/plugin/jquery.mustache.js"></script>
+
 <script src="source/plugin/mustache.js"></script>
 
-
 <script type="x-tmpl-mustache" id="desc-template">
+<h2>{{title}}</h2>
+<div>
 	<img class="img-desc" src="{{statsImage}}" alt="stats"/>
-	<h2 class="title-desc">{{title}}</h2>
-	<p>{{article}}</p>
+	<p class="article">{{article}}</p>
+</div>
 </script>
 
 <script src="source/js/country.js" type="text/javascript"></script>
-
 <script src="source/js/jspage.js" type="text/javascript"></script>
-
 <script src="source/js/formRequest.js" type="text/javascript"></script>
-
-
-
-
 
 </html>
