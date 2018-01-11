@@ -15,7 +15,9 @@
 	<div class="screen-tech">
 			<div title="presentation" style="padding-top: 0">
 				<p class="text-center" style="top: 25%">
-					There are some projects that I worked on. Most of them are website and mini-games. My contribution was mostly coding. I hope this will catch your interest. Enjoy your visit!
+					There are some projects that I worked on. Most of them are website and mini-games.<br/>
+					My contribution was mostly coding. I hope this will catch your interest.<br/>
+					Enjoy your visit!
 				</p>
 			</div>
 	</div>
@@ -37,7 +39,7 @@
 		<div id="display-article" class="flippering-ui div-standard"></div>
 
 		<h2>We want to know your project in mind</h2>
-		
+
 		<div title="form" class="form-container div-standard">
 			<span id="notice-holder" class="notice-box">
 			</span>

@@ -11,7 +11,7 @@ function Description(id, title, article, stats){
 	this.statsImage = stats;
 }
 
-//to initialize the select element
+// Initialize the select element
 var options = function(){
 
 	var index = country.length;
@@ -42,17 +42,17 @@ portfolioLeft = new Description("1","KUNDEN FORCE", articleLeft, "source/css/ran
 portfolioMiddle = new Description("2", "ARC-EN-CIEL DE JOUETS", articleMiddle, "source/css/range-aec-d.png");
 portfolioRight = new Description("3", "ROLL20 CHARACTER SHEET", articleRight, "source/css/range-roll20-d.png");
 
-//list of portfolio
+// List of portfolio
 var portfolioArr = [portfolioLeft, portfolioMiddle, portfolioRight];
 
 
-//toggling the window for the portfolio description
+// Toggling the window for the portfolio description
 $("body").on("click", ".btn-flip", function(){
 	//making article visible
 	$(".flippering-ui").show("slow");
 	$(".flippering-ui").css("visibility", "visible");
 
-	//the portfolio that was clicked
+	// The portfolio that was clicked
 	var portSelect = $(this).data("portfolio");
 
 	$.each( portfolioArr, function(i, val){
@@ -62,7 +62,7 @@ $("body").on("click", ".btn-flip", function(){
 				return articleMarkup = val;
 			}
 	});
-
+	// Initialize mustache
 	var articleLayout = $('#desc-template').html();
 	var html = Mustache.to_html(articleLayout, articleMarkup);
 

@@ -66,11 +66,11 @@ var messageBox = $("#message-box");
 
 			};
 
-			$.post("source/php/send.php", email_info);
+			$.post("source/php/send.php", email_info, function(){
+				messageBox.css("visibility", "visible");
 
-			messageBox.css("visibility", "visible");
-
-			messageBox.html("<p>Email received. We will response as soon as possible.<br/> Thank you!</p>");
+				messageBox.html("<p>Email received. We will response as soon as possible.<br/> Thank you!</p>");
+			});
 
 			//reset th form
 			$(".input-em").val("");

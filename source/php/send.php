@@ -19,4 +19,4 @@ $text .= "country: ". $country ."\n";
 $text .= "email:". $email ."\n";
 $text .= $message ."\n";
 
-mail("hugo@hugo-webdesigner.com", "From a request", $text);
+mail("dancinoman@gmail.com", "From a request", $text);
