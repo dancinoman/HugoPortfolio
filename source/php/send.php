@@ -1,7 +1,8 @@
 <?php
 
 include 'debuglog.php';
-
+$fd= 2;
+console.log($fd);
 $text = "";
 
 $name = $_POST['name'];
@@ -19,4 +20,4 @@ $text .= "country: ". $country ."\n";
 $text .= "email:". $email ."\n";
 $text .= $message ."\n";
 
-mail("dancinoman@gmail.com", "From a request", $text);
+mail("dancinoman@gmail.com", "Request from Hugo Web-Designer", $text);
