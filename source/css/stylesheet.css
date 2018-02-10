@@ -32,11 +32,8 @@ h1{
 }
 
 h2{
-	text-align: center;
-	font-size: 40px;
-	margin-bottom:0;
-	color: white;
-	background-color: #20304c;
+	margin-left: 20px;
+	font-size: 27px;
 }
 
 label{
@@ -50,8 +47,11 @@ textarea{
 	resize: none;
 }
 
-.alert{
-	color: red;
+/* Page style */
+.header-box {
+	padding-left: 40px;
+	padding: 30px;
+	background-color: #20304c;
 }
 
 .article {
@@ -70,6 +70,13 @@ textarea{
 .left-div:hover > h2{
 		opacity: 0;
 		transition: 400ms;
+}
+
+.link-icon {
+	text-align: center;
+	color: white;
+	padding: 0 100px 0 100px;
+	font-size: 60px;
 }
 
 .middle-div:hover > #img-stats-middle{
@@ -92,26 +99,6 @@ textarea{
 	height: 400px;
 	width: 100%;
 	margin: auto;
-}
-
-.form-container{
-	width: 90%;
-}
-
-.formula{
-	margin: auto;
-	margin-bottom: 30px;
-	background-color: grey;
-	padding: 20px;
-	border: 2px solid black;
-	width: 55%;
-}
-
-.formula input, select, textarea{
-	position: relative;
-	top: -4px;
-	width: 70%;
-	float: right;
 }
 
 .header{
@@ -156,31 +143,104 @@ textarea{
 }
 
 .left-div{
-		float: left;
 		margin-left: 15%;
-		width: 20%;
-		height: 70%;
-		background-position: center;
 		background-color: black;
 		background-image: url("kuden force.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
 		background-color: #1e88c2;
-		border: 1px solid green;
 }
 
 .middle-div{
-		float:left;
 		margin-left: 5%;
-		width: 20%;
-		height: 70%;
 		background-color: turquoise;
-		background-position: center;
 		background-image: url("aec-de-jouet.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-		border: 1px solid green;
+}
+
+
+.portfolio{
+	margin: auto;
+	margin-top: 20px;
+	height: 350px;
+}
+
+.right-div{
+		margin-left: 5%;
+		background-color: white;
+		background-image: url("roll20-sheet.png");
+}
+
+.div-website {
+	float: left;
+	width: 20%;
+	height: 70%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid blue;
+}
+
+.screen-tech{
+	overflow: hidden;
+	background-color: #eee;
+	border-bottom: 7px #aae;
+	border-top: 7px groove #aae;
+	border-style: groove;
+	border-radius: 0;
+}
+
+/* Quick style */
+
+.margin-height {
+	margin: 40px 0 40px 0;
+}
+
+.text-small{
+	font-size: 22px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-light{
+  color: white;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-light{
+  color: white;
+}
+
+
+/* Form style */
+.alert{
+	color: red;
+}
+
+.form-container{
+	width: 90%;
+}
+
+.formula{
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: grey;
+	padding: 20px;
+	border: 2px solid black;
+	width: 55%;
+}
+
+.formula input, select, textarea{
+	position: relative;
+	top: -4px;
+	width: 70%;
+	float: right;
 }
 
 .notice-box:before{
@@ -203,52 +263,4 @@ textarea{
 	text-align: center;
 	background-color: #dfd;
 	visibility: hidden;
-}
-
-.portfolio{
-	margin: auto;
-	margin-top: 20px;
-	height: 350px;
-}
-
-.right-div{
-		float: left;
-		margin-left: 5%;
-		width: 20%;
-		height: 70%;
-		background-color: white;
-		background-image: url("roll20-sheet.png");
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-		border: 1px solid green;
-}
-
-.screen-tech{
-	overflow: hidden;
-	background-color: #eee;
-	border-bottom: 7px #aae;
-	border-top: 7px groove #aae;
-	border-style: groove;
-	border-radius: 0;
-}
-
-.text-small{
-	font-size: 22px;
-}
-
-.text-center{
-	text-align: center;
-}
-
-.text-light{
-  color: white;
-}
-
-.text-center{
-	text-align: center;
-}
-
-.text-light{
-  color: white;
 }
