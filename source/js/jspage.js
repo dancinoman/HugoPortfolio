@@ -1,7 +1,11 @@
-// class for description
 
-//defining the exporting value to mustache template
+
+
+//Class for description
+
+//Defining global variables
 var articleMarkup;
+var index;
 
 // blueprint for protfolio
 function Description(id, title, article, stats){
@@ -49,19 +53,19 @@ var portfolioArr = [portfolioLeft, portfolioMiddle, portfolioRight];
 // Toggling the window for the portfolio description
 $("body").on("click", ".btn-flip", function(){
 	//making article visible
-	$(".flippering-ui").show("slow");
 	$(".flippering-ui").css("visibility", "visible");
+ console.log(index);
+	console.log($(this).data("portfolio"));
+	if(index == $(this).data("portfolio")) {
+			$(".flippering-ui").toggle("slow");
+	} else {
+			$(".flippering-ui").show("slow");
+	}
 
 	// The portfolio that was clicked
-	var portSelect = $(this).data("portfolio");
+	index = $(this).data("portfolio");
+	var articleMarkup = portfolioArr[index];
 
-	$.each( portfolioArr, function(i, val){
-			if(portSelect == val.id)
-			{
-				//once the portfolio is found, exporting it to the mustach template
-				return articleMarkup = val;
-			}
-	});
 	// Initialize mustache
 	var articleLayout = $('#desc-template').html();
 	var html = Mustache.to_html(articleLayout, articleMarkup);

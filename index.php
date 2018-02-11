@@ -28,13 +28,13 @@
 		</div>
 
 		<div class="portfolio div-standard">
-				<div class="left-div btn-flip div-website" data-portfolio="1">
+				<div class="left-div btn-flip div-website" data-portfolio="0">
 					<img id="img-stats-left" src="source/css/range-kudenforce.png" alt="kuden force stats"/>
 				</div>
-			<div class="middle-div btn-flip div-website" data-portfolio="2">
+			<div class="middle-div btn-flip div-website" data-portfolio="1">
 				<img id="img-stats-middle" src="source/css/range-aec.png" alt="aec stats"/>
 			</div>
-			<div class="right-div btn-flip div-website" data-portfolio="3">
+			<div class="right-div btn-flip div-website" data-portfolio="2">
 				<img id="img-stats-right" src="source/css/range-roll20.png" alt="aec stats"/>
 			</div>
 		</div>
