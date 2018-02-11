@@ -14,10 +14,10 @@
 
 	<div class="screen-tech">
 			<div title="presentation" style="padding-top: 0">
-				<p class="text-center" style="top: 25%">
+				<p class="text-center text-small" style="top: 25%">
 					There are some projects that I worked on. Most of them are website and mini-games.<br/>
 					My contribution was mostly coding. I hope this will catch your interest.<br/>
-					Let's my website talk instead of me!
+					But let's my website talk instead of me!
 				</p>
 			</div>
 	</div>
