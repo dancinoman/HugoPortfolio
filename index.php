@@ -1,6 +1,6 @@
 <html>
 <head>
-
+	<meta name="viewport" content="width=deveice-width, initial-scale = 1">
 	<title>Hugo Web Developer</title>
 	<link rel="stylesheet" href="source/css/stylesheet.css"/>
 	<link rel="stylesheet" href="source/css/responsive.css" media="only screen and (max-width: 900px)">
