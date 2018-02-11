@@ -1,7 +1,7 @@
 <html>
 <head>
 
-	<title>Hugo Web-Designer</title>
+	<title>Hugo Web Developer</title>
 	<link rel="stylesheet" href="source/css/stylesheet.css"/>
 	<link rel="stylesheet" href="source/css/responsive.css" media="only screen and (max-width: 900px)">
 
@@ -9,7 +9,7 @@
 <body>
 
 	<div class="header">
-		<h1 class="text-center">Hugo Web Designer</h1>
+		<h1 class="text-center">Hugo Web Developer</h1>
 	</div>
 
 	<div class="screen-tech">
