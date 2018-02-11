@@ -12,6 +12,9 @@ h2{
 
 .div-website {
 	float: none;
+	width: 200px;
+	display: block;
+	margin: 15px 15px 15px 5%;
 }
 
 .flippering-ui{
@@ -23,33 +26,14 @@ h2{
 	width: 75%;
 }
 
-
 .header-box {
 	padding: 10px;
-}
-
-.left-div{
-		width: 50%;
-		display: block;
-		margin-left: 5%;
 }
 
 .link-icon {
 	padding: 15px;
 	float: none;
 	display: inline-block;
-}
-
-.middle-div{
-		width: 50%;
-		display: block;
-		margin: 20px;
-		margin-left: 5%;
-}
-
-.right-div{
-		width: 50%;
-		display: block;
 }
 
 .text-small{
@@ -80,6 +64,7 @@ h2{
 		text-align: center;
 		margin-bottom: 10px;
 	}
+
 	.div-web {
 		width: 75%;
 		height: 20%;
